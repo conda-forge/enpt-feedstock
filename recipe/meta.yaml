@@ -38,6 +38,7 @@ requirements:
     - python >=3.6
     - scipy
     - sensormapgeo >=0.4.0
+    - scikit-image
     - sicor
     - tqdm
     - utm
