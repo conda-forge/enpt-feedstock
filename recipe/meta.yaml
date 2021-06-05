@@ -14,7 +14,7 @@ build:
   number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-entry_points:
+  entry_points:
     - enpt = bin.enpt_cli:main
 
 requirements:
