@@ -51,7 +51,6 @@ test:
     - enpt.execution
   commands:
     - pip check
-    - enpt --help
   requires:
     - pip
 
