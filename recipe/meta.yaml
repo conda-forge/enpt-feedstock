@@ -15,7 +15,7 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - enpt = bin.enpt_cli:main
+    - enpt = enpt.cli:main
 
 requirements:
   host:
@@ -51,6 +51,7 @@ test:
     - enpt.execution
   commands:
     - pip check
+    - enpt --help
   requires:
     - pip
 
