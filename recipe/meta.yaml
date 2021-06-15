@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.17.3" %}
+{% set version = "0.17.4" %}
 
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: dbaa39a5b1365b9438835bb55bc5bd5e412bcb925ace89dca5ca6c0e911b4169
+  sha256: 2840f16a0e0f49f78752b8fa8b5f110ffb021937c1b9599942c662bd66dd576a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - enpt = bin.enpt_cli:main
+    - enpt = enpt.cli:main
 
 requirements:
   host:
@@ -51,6 +51,7 @@ test:
     - enpt.execution
   commands:
     - pip check
+    - enpt --help
   requires:
     - pip
 
