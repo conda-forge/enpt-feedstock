@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.10  # temporary workaround for os.sep issue on Python 3.10
     - setuptools
     - setuptools-git
   run:
