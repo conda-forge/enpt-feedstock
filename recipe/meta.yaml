@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.18.6" %}
+{% set version = "0.18.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: b3e58bb280b2de48a64a8015f6aab4ad1a019ecda442f7d14443b47ef7aa777e
+  sha256: 351f8b6ce6f4ebdbc2eb2767e41e42f3c8ea21a1e1c16f33268a6b7a764f7e6c
 
 build:
   number: 0
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.10  # temporary workaround for os.sep issue on Python 3.10
     - setuptools
     - setuptools-git
   run:
