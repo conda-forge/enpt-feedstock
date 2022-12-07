@@ -56,7 +56,7 @@ test:
     - pip
 
 about:
-  home: https://gitext.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
+  home: https://git.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
   summary: EnMAP Processing Tool
   license: GPL-3.0-or-later
   license_file: LICENSE
