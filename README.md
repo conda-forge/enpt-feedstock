@@ -1,7 +1,7 @@
 About enpt
 ==========
 
-Home: https://gitext.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
+Home: https://git.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
 
 Package license: GPL-3.0-or-later
 
