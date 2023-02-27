@@ -11,7 +11,7 @@ source:
   sha256: 4ac2acf97174c2f215a8f2561a2f891d92f1f97123587f071df4aeef7f28098d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.10  # temporary workaround for os.sep issue on Python 3.10
+    - python >=3.7
     - setuptools
     - setuptools-git
   run:
     - arosics >=1.0.0
     - cerberus
-    - geoarray >=0.9.0
+    - geoarray >=0.15.8
     - jsmin
     - lxml
     - matplotlib-base
@@ -36,12 +36,12 @@ requirements:
     - numpy-indexed
     - pandas
     - py-tools-ds >=0.14.23
-    - pyproj >=2.2.0
-    - python >=3.6
+    - pyproj >=3.4.0
+    - python >=3.7
     - scikit-image
     - scipy
     - sensormapgeo >=0.4.0
-    - sicor
+    - sicor >=0.16.0
     - tqdm
     - utm
 
