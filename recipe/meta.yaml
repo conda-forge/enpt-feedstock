@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.17.3" %}
+{% set version = "0.18.15" %}
 
 
 package:
@@ -8,17 +8,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: dbaa39a5b1365b9438835bb55bc5bd5e412bcb925ace89dca5ca6c0e911b4169
+  sha256: 4ac2acf97174c2f215a8f2561a2f891d92f1f97123587f071df4aeef7f28098d
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - enpt = enpt.cli:main
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.10  # temporary workaround for os.sep issue on Python 3.10
     - setuptools
     - setuptools-git
   run:
@@ -47,6 +49,11 @@ test:
   imports:
     - enpt
     - enpt.execution
+  commands:
+    - pip check
+    - enpt --help
+  requires:
+    - pip
 
 about:
   home: https://git.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
