@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: 574c50648576a3004c0696275a8883b95e5f5e7b91752ce3a9b4c017fed50b7e
+  sha256: bd97fe03710bd1f04516fdc6e6b72a6fcf46e0ac1326096d8bf86a5f1c2627a6
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - setuptools
     - setuptools-git
   run:
+    - acwater >=0.3.0
     - arosics >=1.0.0
     - cerberus
     - geoarray >=0.15.8
