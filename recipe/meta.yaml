@@ -36,8 +36,8 @@ requirements:
     - natsort
     - numpy
     - numpy-indexed
-    - pandas
     - packaging
+    - pandas
     - py-tools-ds >=0.14.23
     - pyproj >=3.4.0
     - python >=3.8
