@@ -38,7 +38,7 @@ requirements:
     - numpy-indexed
     - packaging
     - pandas
-    - py-tools-ds >=0.14.23
+    - py-tools-ds >=0.14.25
     - pyproj >=3.4.0
     - python >=3.8
     - scikit-image
