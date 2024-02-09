@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.19.7" %}
+{% set version = "0.20.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: 843c565f8f38bc7434ad043db56b17733a3c0d8568cc172c059fc7b587f4e59c
+  sha256: a24eaf46aad3dbdedaa8a553642c288371b17b34f217e386a48261279b5b8a53
 
 build:
   number: 0
@@ -43,7 +43,7 @@ requirements:
     - python >=3.8
     - scikit-image
     - scipy
-    - sensormapgeo >=0.4.0
+    - sensormapgeo >=1.0.0
     - sicor >=0.19.1
     - tqdm
     - utm
