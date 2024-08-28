@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.20.2" %}
+{% set version = "0.21.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: 34935e9efbc334d9443bb799fe1b4443988fedb547e78107bc59bfeeafc2e8ea
+  sha256: c10ce8188ff3a03a064770b1e7d53db8b816434b42d1d57864705dea46fbe02e
 
 build:
   number: 0
