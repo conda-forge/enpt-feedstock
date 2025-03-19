@@ -47,6 +47,8 @@ requirements:
     - sicor >=0.19.1
     - tqdm
     - utm
+  run_constrained:
+    - llvmlite <0.44 [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/101
 
 test:
   imports:
