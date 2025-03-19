@@ -48,7 +48,7 @@ requirements:
     - tqdm
     - utm
   run_constrained:
-    - llvmlite <0.44 # [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/101
+    - llvmlite <0.44  # [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/101
 
 test:
   imports:
