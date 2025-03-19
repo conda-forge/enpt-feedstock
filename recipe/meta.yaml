@@ -11,7 +11,7 @@ source:
   sha256: c10ce8188ff3a03a064770b1e7d53db8b816434b42d1d57864705dea46fbe02e
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -47,6 +47,8 @@ requirements:
     - sicor >=0.19.1
     - tqdm
     - utm
+  run_constrained:
+    - llvmlite <0.44  # [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/101
 
 test:
   imports:
