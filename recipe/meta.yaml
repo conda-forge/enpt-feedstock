@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "0.21.1" %}
+{% set version = "1.0.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: 37d4881a3fcef5959fbeca77e0a22ac57744837c58c231a18accd93730a8aa5b
+  sha256: d73e52dab5ceb1face0c3ad59e51686106244ff3e331cf526c23a9ca642fc681
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -21,14 +21,14 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
-    - setuptools-git
+    - hatchling
   run:
     - acwater >=0.3.0
     - arosics >=1.0.0
     - cerberus
     - gdal
     - geoarray >=0.15.8
+    - isofit >=3.4.2
     - jsmin
     - lxml
     - matplotlib-base
