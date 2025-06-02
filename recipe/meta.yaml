@@ -21,8 +21,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
-    - setuptools-git
+    - hatchling
   run:
     - acwater >=0.3.0
     - arosics >=1.0.0
