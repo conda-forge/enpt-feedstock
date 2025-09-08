@@ -15,8 +15,6 @@ build:
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - enpt = enpt.cli:main
-  script_env:
-    - CONDA_BUILD_USE_MAMBA=1
 
 requirements:
   host:
