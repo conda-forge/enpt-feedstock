@@ -1,7 +1,6 @@
 {% set name = "enpt" %}
 {% set version = "1.1.0" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,18 +10,19 @@ source:
   sha256: 27b4aa16015d66e92c7805119dba303e2654fe5a2be33e149bc592299f6de0c1
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - enpt = enpt.cli:main
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
     - hatchling
+    - pip
   run:
+    - python >={{ python_min }}
     - acwater >=0.3.0
     - arosics >=1.0.0
     - cerberus
@@ -40,7 +40,6 @@ requirements:
     - pandas
     - py-tools-ds >=0.14.25
     - pyproj >=3.4.0
-    - python >={{ python_min }}
     - scikit-image
     - scipy
     - sensormapgeo >=1.0.0
