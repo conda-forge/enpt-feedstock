@@ -1,5 +1,5 @@
 {% set name = "enpt" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
-  sha256: 27b4aa16015d66e92c7805119dba303e2654fe5a2be33e149bc592299f6de0c1
+  sha256: d6cb4c25b200635128a0f262c8008d1d527e329d00a0e87702f15931734cc607
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - enpt = enpt.cli:main
 
@@ -29,7 +29,7 @@ requirements:
     - cerberus
     - gdal
     - geoarray >=0.15.8
-    - isofit >=3.4.3
+    - isofit =3.4.3
     - jsmin
     - lxml
     - matplotlib-base
