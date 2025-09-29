@@ -28,7 +28,7 @@ requirements:
     - arosics >=1.0.0
     - cerberus
     - gdal
-    - geoarray >=0.15.8
+    - geoarray >=0.19.2
     - isofit =3.4.3
     - jsmin
     - lxml
