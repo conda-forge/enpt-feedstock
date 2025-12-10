@@ -7,7 +7,6 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/enpt-{{ version }}.tar.gz
   sha256: 9ca7b250a8b7d224060877b9ca5944e18c03f2f895c200c4b0bac7942759351f
 
 build:
@@ -48,7 +47,7 @@ requirements:
     - tqdm
     - utm
   run_constrained:
-    - llvmlite <0.44  # [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/101
+    - llvmlite >=0.46  # [unix]  # https://github.com/conda-forge/llvmlite-feedstock/issues/109
 
 test:
   imports:
