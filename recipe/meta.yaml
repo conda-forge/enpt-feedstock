@@ -61,7 +61,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://git.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
+  home: https://git.gfz.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
   summary: EnMAP Processing Tool
   license: GPL-3.0-or-later
   license_file: LICENSE
