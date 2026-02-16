@@ -58,6 +58,7 @@ test:
     - enpt --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://git.gfz.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
