@@ -3,7 +3,7 @@ About enpt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/enpt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://git.gfz-potsdam.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
+Home: https://git.gfz.de/EnMAP/GFZ_Tools_EnMAP_BOX/EnPT
 
 Package license: GPL-3.0-or-later
 
