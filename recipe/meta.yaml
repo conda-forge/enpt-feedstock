@@ -10,7 +10,7 @@ source:
   sha256: 895d1f9b6d8546cb72070bb050448fed49c479f09d1ccdd417b37e7ed7950b9d
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - acwater >=0.4.1
+    - acwater >=0.4.1  # [not (osx and arm64)]
     - arosics >=1.0.0
     - cerberus
     - gdal
