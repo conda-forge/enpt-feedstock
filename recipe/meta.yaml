@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - acwater >=0.4.1
+    - acwater >=0.4.1  # [not (osx and arm64)]
     - arosics >=1.0.0
     - cerberus
     - gdal
