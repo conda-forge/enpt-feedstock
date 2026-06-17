@@ -10,7 +10,7 @@ source:
   sha256: c8950b89fdf2a6845f6af934afc01d6735e9d17b70cb75fd6402cd16ec02fca5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -29,6 +29,7 @@ requirements:
     - gdal
     - geoarray >=0.19.2
     - isofit =3.4.3
+    - joblib
     - jsmin
     - lxml
     - matplotlib-base
