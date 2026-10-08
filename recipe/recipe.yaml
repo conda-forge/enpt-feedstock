@@ -54,6 +54,7 @@ requirements:
   run_constraints:
     - eccodes !=2.42.0  # classified as suspicous by ESET on Windows
     - hygeos-core <1.3.0  # should be fixed with polymer>4.17.3
+    - ray-core <2.59  # workaround for ray timeouts due to new token authentification (remove at next release)
 
 tests:
   - python:
