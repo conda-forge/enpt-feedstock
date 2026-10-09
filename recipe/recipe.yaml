@@ -13,7 +13,7 @@ source:
   sha256: 2d08732e57bbf5c5e56f0c21b995ddc3eab3e64b2b72f687f24cfa83b5161fea
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -54,6 +54,7 @@ requirements:
   run_constraints:
     - eccodes !=2.42.0  # classified as suspicous by ESET on Windows
     - hygeos-core <1.3.0  # should be fixed with polymer>4.17.3
+    - ray-core <2.59  # workaround for ray timeouts due to new token authentification (remove at next release)
 
 tests:
   - python:
